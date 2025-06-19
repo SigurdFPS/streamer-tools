@@ -1,10 +1,16 @@
-// /MainApp/src/pages/index.tsx
 import React from 'react';
+import AppLoader from '../components/AppLoader';
 
 export default function HomePage() {
   return (
-    <div className="text-white text-2xl font-semibold p-8">
-      Welcome to Streamer Tools Launcher
+    <div className="fade-in">
+      <div className="px-6 pt-10 pb-4">
+        <h1 className="text-2xl font-bold text-white mb-2">Your Tools</h1>
+        <p className="text-gray-400 text-sm">
+          Launch your available applications below. Premium tools will be unlocked after subscription or license redemption.
+        </p>
+      </div>
+      <AppLoader />
     </div>
   );
 }
