@@ -1,12 +1,12 @@
-import React from "react";
-import { NavbarDemo } from "./components/NavBar";
-import { Outlet } from "react-router-dom";
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import { NavbarDemo } from './components/NavBar';
 
-export default function AppLayout() {
+export default function App() {
   return (
-    <div className="min-h-screen bg-gray-950 text-white relative">
+    <div className="min-h-screen bg-gray-950 text-white">
       <NavbarDemo />
-      <main className="pt-20 px-4">
+      <main className="pt-20">
         <Outlet />
       </main>
     </div>
