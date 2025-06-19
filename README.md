@@ -14,8 +14,9 @@ All in one solution for streamers
 │   │   ├── LockedModal.tsx
 │   │   └── NavBar.tsx ✅
 │   ├── pages/
-│   │   ├── index.tsx             # Home / Dashboard
+│   │   ├── index.css ✅             # Home / Dashboard
 │   │   ├── login.tsx ✅
+│   │   ├── index.tsx
 │   │   ├── register.tsx
 │   │   └── apps/
 │   │       ├── App1.js
@@ -30,4 +31,4 @@ All in one solution for streamers
 ├── index.html (or bundled via Electron)
 ├── main.ts (Electron main process)
 ├── preload.ts
-└── package.json
+└── package.json ✅ (partially)
