@@ -1,22 +1,24 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AppLayout from "./App";
-import Home from "./pages/index";
-import Login from "./pages/login";
-import Register from "./pages/register";
-import App1 from "./pages/apps/App1";
+// /MainApp/src/main.tsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import App from './App';
+import HomePage from './pages/index';
+import LoginPage from './pages/login';
+import RegisterPage from './pages/register';
+import LoadingScreen from './pages/LoadingScreen'; // <-- loading screen
+import './pages/index.css';
 
-const root = ReactDOM.createRoot(document.getElementById("root")!);
+const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
-      <Route path="/" element={<AppLayout />}>
-        <Route index element={<Home />} />
-        <Route path="login" element={<Login />} />
-        <Route path="register" element={<Register />} />
-        <Route path="apps/app1" element={<App1 />} />
+      <Route path="/" element={<App />}>
+        <Route index element={<HomePage />} />
+        <Route path="login" element={<LoginPage />} />
+        <Route path="register" element={<RegisterPage />} />
+        <Route path="loading" element={<LoadingScreen />} />
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
