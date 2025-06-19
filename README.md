@@ -29,6 +29,6 @@ All in one solution for streamers
 ├── tailwind.config.js ✅
 ├── postcss.config.js
 ├── index.html (or bundled via Electron)
-├── main.ts (Electron main process)
+├── main.ts (Electron main process) ✅
 ├── preload.ts
 └── package.json ✅ (partially)
